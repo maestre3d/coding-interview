@@ -28,7 +28,7 @@ public final class CommonElements {
         return res.stream().mapToInt(i -> i).toArray();
     }
 
-    public int[] exec() {
+    public Integer[] exec() {
         // O(n, m) - time
         // O(n, m) - space
         ArrayList<Integer> res = new ArrayList<>();
@@ -46,6 +46,7 @@ public final class CommonElements {
             }
         }
 
-        return res.stream().mapToInt(i -> i).toArray();
+        Integer[] resArr = new Integer[res.size()];
+        return res.toArray(resArr);
     }
 }
