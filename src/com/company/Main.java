@@ -3,6 +3,7 @@ package com.company;
 import com.company.problem.CommonElements;
 import com.company.problem.IsRotation;
 import com.company.problem.MostFrequentItem;
+import com.company.problem.NonRepeatingChar;
 
 import java.util.Arrays;
 
@@ -17,5 +18,8 @@ public class Main {
 
         IsRotation isRotation = new IsRotation(new int[]{1, 2, 3, 4, 5, 6, 7}, new int[]{4,5,6,7,1,2,3});
         System.out.println(isRotation.exec());
+
+        NonRepeatingChar nonRepeatingChar = new NonRepeatingChar("axabcbc");
+        System.out.println(nonRepeatingChar.exec());
     }
 }
