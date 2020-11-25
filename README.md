@@ -1,2 +1,2 @@
-# coding-interview
-Basic coding interview algorithms
+# Coding Interview
+Basic coding interview algorithms written in Java 15.
