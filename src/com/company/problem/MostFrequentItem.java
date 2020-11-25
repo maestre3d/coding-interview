@@ -3,12 +3,14 @@ package com.company.problem;
 import java.util.HashMap;
 
 public final class MostFrequentItem {
-    private final Integer[] items;
-    public MostFrequentItem(Integer[] items) {
+    private final int[] items;
+    public MostFrequentItem(int[] items) {
         this.items = items;
     }
 
     public Integer exec() {
+        // O(n) - time
+        // O(2n) - space
         int max_count = -1;
         Integer max_item = null;
 
