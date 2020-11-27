@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.problem.CommonElements;
-import com.company.problem.IsRotation;
-import com.company.problem.MostFrequentItem;
-import com.company.problem.NonRepeatingChar;
+import com.company.problem.*;
 
 import java.util.Arrays;
 
@@ -19,7 +16,16 @@ public class Main {
         IsRotation isRotation = new IsRotation(new int[]{1, 2, 3, 4, 5, 6, 7}, new int[]{4,5,6,7,1,2,3});
         System.out.println(isRotation.exec());
 
-        NonRepeatingChar nonRepeatingChar = new NonRepeatingChar("axabcbc");
+        NonRepeatingChar nonRepeatingChar = new NonRepeatingChar("axxbcbc");
         System.out.println(nonRepeatingChar.exec());
+
+        ReverseInt32 reverseInt32 = new ReverseInt32(901000);
+        System.out.println(reverseInt32.exec());
+
+        IsPalindromeNum isPalindromeNum = new IsPalindromeNum(121);
+        System.out.println(isPalindromeNum.exec());
+
+        RemoveDuplicates removeDuplicates = new RemoveDuplicates(new int[]{0,0,1,1,1,2,2,3,3,4});
+        System.out.println(removeDuplicates.exec());
     }
 }
